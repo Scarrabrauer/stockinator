@@ -50,9 +50,7 @@ def resolve_symbol(query):
 # Mehrere Ticker eingeben
 # -------------------------------------
 st.markdown("### Tickerliste eingeben (Name, ISIN, WKN oder Symbol – zeilenweise)")
-user_input = st.text_area("Ein Ticker pro Zeile", "rheinmetall
-boeing
-allianz")
+user_input = st.text_area("Ein Ticker pro Zeile", "rheinmetall, boeing, allianz")
 
 tickers = [resolve_symbol(x) for x in user_input.strip().splitlines() if x.strip()]
 
@@ -131,5 +129,3 @@ try:
 
 except FileNotFoundError:
     st.warning("Kein Tradejournal gefunden. Bitte zuerst Trades eintragen.")
-
-
