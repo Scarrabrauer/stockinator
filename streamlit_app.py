@@ -4,14 +4,14 @@ import yfinance as yf
 import plotly.graph_objs as go
 import datetime
 
-# --------------------------------------
-# TICKER-ERKENNUNGSMODUL
-# --------------------------------------
+# ------------------------------
+# TICKER-ERKENNUNG
+# ------------------------------
 ticker_db = pd.DataFrame({
-    "Name": ["Apple", "Microsoft", "SAP", "Tesla"],
-    "WKN": ["865985", "870747", "716460", "A1CX3T"],
-    "ISIN": ["US0378331005", "US5949181045", "DE0007164600", "US88160R1014"],
-    "Ticker": ["AAPL", "MSFT", "SAP.DE", "TSLA"]
+    "Name": ["Apple", "Microsoft", "SAP", "Tesla", "MSCI World ETF"],
+    "WKN": ["865985", "870747", "716460", "A1CX3T", "A0ETQX"],
+    "ISIN": ["US0378331005", "US5949181045", "DE0007164600", "US88160R1014", "IE00B0M62Q58"],
+    "Ticker": ["AAPL", "MSFT", "SAP.DE", "TSLA", "IQQW.DE"]
 })
 
 def find_ticker(query):
@@ -24,19 +24,26 @@ def find_ticker(query):
 st.set_page_config(page_title="Daytrading Terminal", layout="centered")
 st.title("Daytrading Terminal – Analyse & Journal")
 
-# --------------------------------------
-# TICKER-EINGABE & ERKENNUNG
-# --------------------------------------
+# ------------------------------
+# TICKER-EINGABE
+# ------------------------------
 input_query = st.text_input("Aktienname, WKN oder ISIN eingeben", value="Apple")
 resolved_ticker = find_ticker(input_query)
 st.write(f"**Erkannter Ticker:** `{resolved_ticker}`")
 
-# --------------------------------------
-# DATENANALYSE-MODUL
-# --------------------------------------
+# ------------------------------
+# TECHNISCHE ANALYSE
+# ------------------------------
 try:
     stock = yf.Ticker(resolved_ticker)
     hist = stock.history(period="1mo", interval="1h")
+
+    if hist.empty:
+        hist = stock.history(period="1mo", interval="1d")
+
+    if hist.empty:
+        raise ValueError("Keine Kursdaten verfügbar. Bitte anderen Ticker versuchen.")
+
     usd_to_eur = 0.92
     hist['Close_EUR'] = hist['Close'] * usd_to_eur
     hist['EMA9'] = hist['Close_EUR'].ewm(span=9).mean()
@@ -54,7 +61,7 @@ try:
     hist['UpperBB'] = hist['SMA20'] + 2 * hist['Close_EUR'].rolling(window=20).std()
     hist['LowerBB'] = hist['SMA20'] - 2 * hist['Close_EUR'].rolling(window=20).std()
 
-    latest = hist.iloc[-1]
+    latest = hist.dropna().iloc[-1]
 
     st.subheader(f"{resolved_ticker} – Technische Analyse (EUR)")
     col1, col2, col3 = st.columns(3)
@@ -94,11 +101,11 @@ try:
     st.plotly_chart(vol_fig, use_container_width=True)
 
 except Exception as e:
-    st.error(f"Fehler bei Datenanalyse: {e}")
+    st.warning(f"Fehler bei Datenanalyse: {e}")
 
-# --------------------------------------
+# ------------------------------
 # TRADEJOURNAL
-# --------------------------------------
+# ------------------------------
 st.markdown("### Tradejournal")
 csv_file = "tradejournal.csv"
 try:
