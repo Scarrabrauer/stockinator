@@ -141,3 +141,4 @@ with st.form("new_trade"):
 
 if not journal_df.empty:
     st.dataframe(journal_df.sort_values(by="Datum", ascending=False))
+
