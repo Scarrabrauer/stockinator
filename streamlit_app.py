@@ -1,56 +1,136 @@
 import streamlit as st
-import yfinance as yf
 import pandas as pd
+import yfinance as yf
+import plotly.graph_objs as go
+import datetime
 
-st.set_page_config(page_title="Daytrading Analyse Tool", layout="centered")
+# --------------------------------------
+# TICKER-ERKENNUNGSMODUL
+# --------------------------------------
+ticker_db = pd.DataFrame({
+    "Name": ["Apple", "Microsoft", "SAP", "Tesla"],
+    "WKN": ["865985", "870747", "716460", "A1CX3T"],
+    "ISIN": ["US0378331005", "US5949181045", "DE0007164600", "US88160R1014"],
+    "Ticker": ["AAPL", "MSFT", "SAP.DE", "TSLA"]
+})
 
-st.title("Daytrading Live-Analyse")
+def find_ticker(query):
+    query = query.strip().lower()
+    for _, row in ticker_db.iterrows():
+        if query in row['Name'].lower() or query == row['WKN'].lower() or query == row['ISIN'].lower():
+            return row['Ticker']
+    return query.upper()
 
-# Eingabefeld für den Ticker
-ticker = st.text_input("Gib ein Ticker-Symbol ein (z. B. AAPL, MSFT, TSLA)", value="AAPL")
+st.set_page_config(page_title="Daytrading Terminal", layout="centered")
+st.title("Daytrading Terminal – Analyse & Journal")
 
-if ticker:
-    try:
-        # Daten abrufen
-        stock = yf.Ticker(ticker)
-        data = stock.history(period="5d", interval="5m")
-        latest = data.iloc[-1]
+# --------------------------------------
+# TICKER-EINGABE & ERKENNUNG
+# --------------------------------------
+input_query = st.text_input("Aktienname, WKN oder ISIN eingeben", value="Apple")
+resolved_ticker = find_ticker(input_query)
+st.write(f"**Erkannter Ticker:** `{resolved_ticker}`")
 
-        # Berechnungen für EMA und RSI
-        close_prices = data['Close']
-        ema9 = close_prices.ewm(span=9).mean().iloc[-1]
+# --------------------------------------
+# DATENANALYSE-MODUL
+# --------------------------------------
+try:
+    stock = yf.Ticker(resolved_ticker)
+    hist = stock.history(period="1mo", interval="1h")
+    usd_to_eur = 0.92
+    hist['Close_EUR'] = hist['Close'] * usd_to_eur
+    hist['EMA9'] = hist['Close_EUR'].ewm(span=9).mean()
+    hist['EMA20'] = hist['Close_EUR'].ewm(span=20).mean()
 
-        delta = close_prices.diff()
-        up = delta.clip(lower=0)
-        down = -delta.clip(upper=0)
-        roll_up = up.rolling(14).mean()
-        roll_down = down.rolling(14).mean()
-        rs = roll_up / roll_down
-        rsi = 100.0 - (100.0 / (1.0 + rs)).iloc[-1]
+    delta = hist['Close_EUR'].diff()
+    gain = delta.clip(lower=0)
+    loss = -delta.clip(upper=0)
+    avg_gain = gain.rolling(window=14).mean()
+    avg_loss = loss.rolling(window=14).mean()
+    rs = avg_gain / avg_loss
+    hist['RSI'] = 100 - (100 / (1 + rs))
 
-        # VWAP
-        typical_price = (data['High'] + data['Low'] + data['Close']) / 3
-        vwap = (typical_price * data['Volume']).cumsum() / data['Volume'].cumsum()
-        vwap_latest = vwap.iloc[-1]
+    hist['SMA20'] = hist['Close_EUR'].rolling(window=20).mean()
+    hist['UpperBB'] = hist['SMA20'] + 2 * hist['Close_EUR'].rolling(window=20).std()
+    hist['LowerBB'] = hist['SMA20'] - 2 * hist['Close_EUR'].rolling(window=20).std()
 
-        # Ausgabe
-        st.subheader(f"Analyse für {ticker.upper()}")
-        st.metric("Aktueller Kurs", f"{latest['Close']:.2f} USD")
-        st.metric("VWAP", f"{vwap_latest:.2f} USD")
-        st.metric("EMA 9", f"{ema9:.2f} USD")
-        st.metric("RSI (14)", f"{rsi:.0f}")
+    latest = hist.iloc[-1]
 
-        if rsi < 30:
-            st.success("Signal: Überverkauft – mögliche Rebound-Chance.")
-        elif rsi > 70:
-            st.warning("Signal: Überkauft – Einstieg mit Vorsicht.")
-        else:
-            st.info("Signal: Neutral – Momentum prüfen.")
+    st.subheader(f"{resolved_ticker} – Technische Analyse (EUR)")
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Kurs", f"{latest['Close_EUR']:.2f}")
+    col2.metric("EMA 9", f"{latest['EMA9']:.2f}")
+    col3.metric("EMA 20", f"{latest['EMA20']:.2f}")
 
-        st.markdown("**Hinweis:** Breakouts bei steigendem Volumen bieten häufig gute Chancen für kurzfristige Gewinne.")
+    if latest['EMA9'] > latest['EMA20']:
+        st.success("Aufwärtstrend (Bullish Crossover)")
+    elif latest['EMA9'] < latest['EMA20']:
+        st.error("Abwärtstrend (Bearish Crossover)")
+    else:
+        st.info("Seitwärtstrend")
 
-        # Chart
-        st.line_chart(close_prices[-50:])
+    rsi = latest['RSI']
+    if rsi < 30:
+        st.success(f"RSI: {rsi:.1f} (überverkauft)")
+    elif rsi > 70:
+        st.warning(f"RSI: {rsi:.1f} (überkauft)")
+    else:
+        st.info(f"RSI: {rsi:.1f} (neutral)")
 
-    except Exception as e:
-        st.error(f"Fehler bei der Datenabfrage oder Analyse: {e}")
+    st.markdown("### Kursverlauf inkl. Bollinger Bänder")
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=hist.index, y=hist['Close_EUR'], name='Kurs', line=dict(color='blue')))
+    fig.add_trace(go.Scatter(x=hist.index, y=hist['UpperBB'], name='Upper BB', line=dict(color='lightgray')))
+    fig.add_trace(go.Scatter(x=hist.index, y=hist['LowerBB'], name='Lower BB', line=dict(color='lightgray')))
+    fig.add_trace(go.Scatter(x=hist.index, y=hist['EMA9'], name='EMA 9', line=dict(color='green', dash='dot')))
+    fig.add_trace(go.Scatter(x=hist.index, y=hist['EMA20'], name='EMA 20', line=dict(color='red', dash='dot')))
+    fig.update_layout(height=500)
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown("### Volumenprofil")
+    vol_fig = go.Figure()
+    vol_fig.add_trace(go.Bar(x=hist.index, y=hist['Volume'], name='Volumen', marker_color='orange'))
+    vol_fig.update_layout(height=200)
+    st.plotly_chart(vol_fig, use_container_width=True)
+
+except Exception as e:
+    st.error(f"Fehler bei Datenanalyse: {e}")
+
+# --------------------------------------
+# TRADEJOURNAL
+# --------------------------------------
+st.markdown("### Tradejournal")
+csv_file = "tradejournal.csv"
+try:
+    journal_df = pd.read_csv(csv_file)
+except FileNotFoundError:
+    journal_df = pd.DataFrame(columns=["Datum", "Ticker", "Entry (EUR)", "Exit (EUR)", "Stückzahl", "Gewinn/Verlust (EUR)", "Setup", "Notizen"])
+
+with st.form("new_trade"):
+    col1, col2 = st.columns(2)
+    entry = col1.number_input("Entry-Kurs (EUR)", min_value=0.0, value=100.0)
+    exit = col2.number_input("Exit-Kurs (EUR)", min_value=0.0, value=105.0)
+    qty = st.number_input("Stückzahl", min_value=1, value=10)
+    setup = st.text_input("Setup", value="Breakout")
+    notes = st.text_area("Notizen")
+    submit = st.form_submit_button("Speichern")
+
+    if submit:
+        date = datetime.date.today().strftime("%Y-%m-%d")
+        pnl = round((exit - entry) * qty, 2)
+        new_entry = {
+            "Datum": date,
+            "Ticker": resolved_ticker,
+            "Entry (EUR)": entry,
+            "Exit (EUR)": exit,
+            "Stückzahl": qty,
+            "Gewinn/Verlust (EUR)": pnl,
+            "Setup": setup,
+            "Notizen": notes
+        }
+        journal_df = pd.concat([journal_df, pd.DataFrame([new_entry])], ignore_index=True)
+        journal_df.to_csv(csv_file, index=False)
+        st.success("Trade gespeichert!")
+
+if not journal_df.empty:
+    st.dataframe(journal_df.sort_values(by="Datum", ascending=False))
