@@ -30,9 +30,7 @@ def find_ticker_matches(q):
 # Eingabe & Moduswahl
 # ---------------------------------------
 st.markdown("### Mehrere Ticker eingeben (z. B. 'rhein', 'deutsche', 'druck')")
-user_input = st.text_area("Ein Ticker pro Zeile", "rhein
-deutsche
-hellofresh")
+user_input = st.text_area("Ein Ticker pro Zeile", "rhein", "deutsche", "hellofresh")
 
 show_all = st.checkbox("Alle passenden Treffer je Eingabe anzeigen (statt Auswahl)", value=False)
 
