@@ -25,17 +25,15 @@ def add_technical_indicators(data):
     try:
         sma20 = data['Close'].rolling(window=20).mean()
         stddev = data['Close'].rolling(window=20).std()
-        boll_upper = sma20 + (2 * stddev)
-        boll_lower = sma20 - (2 * stddev)
-        result['bollinger_upper'] = boll_upper.iloc[-1]
-        result['bollinger_lower'] = boll_lower.iloc[-1]
+        result['bollinger_upper'] = float((sma20 + 2 * stddev).iloc[-1])
+        result['bollinger_lower'] = float((sma20 - 2 * stddev).iloc[-1])
 
         ema12 = data['Close'].ewm(span=12, adjust=False).mean()
         ema26 = data['Close'].ewm(span=26, adjust=False).mean()
         macd = ema12 - ema26
         signal = macd.ewm(span=9, adjust=False).mean()
-        result['macd'] = macd.iloc[-1]
-        result['macd_signal'] = signal.iloc[-1]
+        result['macd'] = float(macd.iloc[-1])
+        result['macd_signal'] = float(signal.iloc[-1])
         result['macd_trend'] = (
             'bullish crossover' if macd.iloc[-1] > signal.iloc[-1]
             else 'bearish crossover' if macd.iloc[-1] < signal.iloc[-1]
@@ -106,14 +104,17 @@ if selected_symbol:
 
             st.markdown("### Erweiterte technische Analyse")
             ti = add_technical_indicators(data)
-            col1, col2 = st.columns(2)
-            with col1:
-                st.metric("Bollinger oben", f"{ti['bollinger_upper']:.2f}")
-                st.metric("MACD", f"{ti['macd']:.2f}")
-            with col2:
-                st.metric("Bollinger unten", f"{ti['bollinger_lower']:.2f}")
-                st.metric("MACD-Signal", f"{ti['macd_signal']:.2f}")
-            st.markdown(f"**MACD-Trend:** {ti['macd_trend'].capitalize()}")
+            if "error" not in ti:
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.metric("Bollinger oben", f"{ti['bollinger_upper']:.2f}")
+                    st.metric("MACD", f"{ti['macd']:.2f}")
+                with col2:
+                    st.metric("Bollinger unten", f"{ti['bollinger_lower']:.2f}")
+                    st.metric("MACD-Signal", f"{ti['macd_signal']:.2f}")
+                st.markdown(f"**MACD-Trend:** {ti['macd_trend'].capitalize()}")
+            else:
+                st.warning(f"Technische Analyse unvollständig: {ti['error']}")
 
             st.markdown("### Aktuelle News von Yahoo Finance")
             news_items = fetch_yahoo_news(selected_symbol)
