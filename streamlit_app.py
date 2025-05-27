@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import yfinance as yf
 import feedparser
+import numpy as np
 
 st.set_page_config(page_title="Daytrading – Analyse + News", layout="wide")
 st.title("Daytrading Terminal – Technische Analyse + Yahoo News")
@@ -20,20 +21,26 @@ def find_ticker_matches(q):
         ticker_db["YahooTicker"].str.lower().str.contains(q)
     ][["Name", "Synonyme", "YahooTicker"]]
 
+def safe_float(value):
+    try:
+        return float(value) if pd.notna(value) and np.isfinite(value) else None
+    except:
+        return None
+
 def add_technical_indicators(data):
     result = {}
     try:
         sma20 = data['Close'].rolling(window=20).mean()
         stddev = data['Close'].rolling(window=20).std()
-        result['bollinger_upper'] = float((sma20 + 2 * stddev).iloc[-1])
-        result['bollinger_lower'] = float((sma20 - 2 * stddev).iloc[-1])
+        result['bollinger_upper'] = safe_float((sma20 + 2 * stddev).iloc[-1])
+        result['bollinger_lower'] = safe_float((sma20 - 2 * stddev).iloc[-1])
 
         ema12 = data['Close'].ewm(span=12, adjust=False).mean()
         ema26 = data['Close'].ewm(span=26, adjust=False).mean()
         macd = ema12 - ema26
         signal = macd.ewm(span=9, adjust=False).mean()
-        result['macd'] = float(macd.iloc[-1])
-        result['macd_signal'] = float(signal.iloc[-1])
+        result['macd'] = safe_float(macd.iloc[-1])
+        result['macd_signal'] = safe_float(signal.iloc[-1])
         result['macd_trend'] = (
             'bullish crossover' if macd.iloc[-1] > signal.iloc[-1]
             else 'bearish crossover' if macd.iloc[-1] < signal.iloc[-1]
@@ -107,11 +114,11 @@ if selected_symbol:
             if "error" not in ti:
                 col1, col2 = st.columns(2)
                 with col1:
-                    st.metric("Bollinger oben", f"{ti['bollinger_upper']:.2f}")
-                    st.metric("MACD", f"{ti['macd']:.2f}")
+                    st.metric("Bollinger oben", f"{ti['bollinger_upper']:.2f}" if ti['bollinger_upper'] else "n/v")
+                    st.metric("MACD", f"{ti['macd']:.2f}" if ti['macd'] else "n/v")
                 with col2:
-                    st.metric("Bollinger unten", f"{ti['bollinger_lower']:.2f}")
-                    st.metric("MACD-Signal", f"{ti['macd_signal']:.2f}")
+                    st.metric("Bollinger unten", f"{ti['bollinger_lower']:.2f}" if ti['bollinger_lower'] else "n/v")
+                    st.metric("MACD-Signal", f"{ti['macd_signal']:.2f}" if ti['macd_signal'] else "n/v")
                 st.markdown(f"**MACD-Trend:** {ti['macd_trend'].capitalize()}")
             else:
                 st.warning(f"Technische Analyse unvollständig: {ti['error']}")
