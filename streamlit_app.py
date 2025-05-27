@@ -7,7 +7,7 @@ import numpy as np
 
 # Layout & Titel
 st.set_page_config(page_title="Daytrader Pro", layout="wide")
-st.title("Daytrader Pro – Technische Analyse + News")
+st.title("Daytrader Pro – Technische Analyse + My News")
 
 # Ticker-Datenbank laden
 @st.cache_data
