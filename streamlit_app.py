@@ -5,18 +5,15 @@ import yfinance as yf
 import feedparser
 import numpy as np
 
-# Layout & Titel
 st.set_page_config(page_title="Daytrader Pro", layout="wide")
 st.title("Daytrader Pro – Technische Analyse + News")
 
-# Ticker-Datenbank laden
 @st.cache_data
 def load_ticker_db():
     return pd.read_csv("ticker_database.csv")
 
 ticker_db = load_ticker_db()
 
-# Eingabe + Matching
 def find_ticker_matches(q):
     q = q.strip().lower()
     return ticker_db[
@@ -25,14 +22,12 @@ def find_ticker_matches(q):
         ticker_db["YahooTicker"].str.lower().str.contains(q)
     ][["Name", "YahooTicker"]]
 
-# Letzten gültigen Wert holen
 def last_valid(series):
     try:
         return float(series.dropna().iloc[-1])
     except:
         return None
 
-# Yahoo-News holen
 def fetch_yahoo_news(symbol):
     try:
         url = f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={symbol}&region=US&lang=en-US"
@@ -41,16 +36,12 @@ def fetch_yahoo_news(symbol):
     except:
         return []
 
-# Technische Indikatoren berechnen
 def calculate_indicators(df):
     close = df["Close"]
     indicators = {}
-
-    # EUR-Umrechnung
     close_eur = close * 0.92
     indicators["price_eur"] = last_valid(close_eur)
 
-    # RSI
     delta = close_eur.diff()
     gain = delta.clip(lower=0)
     loss = -delta.clip(upper=0)
@@ -67,7 +58,6 @@ def calculate_indicators(df):
         elif rsi_val < 30:
             indicators["rsi_state"] = "überverkauft"
 
-    # MACD
     ema12 = close.ewm(span=12, adjust=False).mean()
     ema26 = close.ewm(span=26, adjust=False).mean()
     macd = ema12 - ema26
@@ -81,13 +71,11 @@ def calculate_indicators(df):
         elif indicators["macd"] < indicators["macd_signal"]:
             indicators["macd_trend"] = "bearish crossover"
 
-    # Bollinger
     sma20 = close.rolling(window=20).mean()
     std = close.rolling(window=20).std()
     indicators["bollinger_upper"] = last_valid(sma20 + 2 * std)
     indicators["bollinger_lower"] = last_valid(sma20 - 2 * std)
 
-    # Trend (EMA 9 vs 20)
     ema9 = close_eur.ewm(span=9).mean()
     ema20 = close_eur.ewm(span=20).mean()
     if last_valid(ema9) and last_valid(ema20):
@@ -97,7 +85,6 @@ def calculate_indicators(df):
 
     return indicators
 
-# UI Eingabe
 st.markdown("### Aktie eingeben (Name, WKN, ISIN, Ticker oder Synonym)")
 query = st.text_input("Beispiel: Rhein, Airbus, DAI", "rhein")
 
@@ -113,7 +100,6 @@ else:
     choice = st.selectbox("Mehrere Treffer gefunden – bitte auswählen:", options)
     selected_symbol = choice.split(" – ")[0]
 
-# Analyse starten
 if selected_symbol:
     st.markdown(f"### Analyse für: `{selected_symbol}`")
     try:
@@ -137,7 +123,6 @@ if selected_symbol:
             col7.metric("Bollinger oben", f"{ind['bollinger_upper']:.2f}" if ind["bollinger_upper"] else "n/v")
             col8.metric("Bollinger unten", f"{ind['bollinger_lower']:.2f}" if ind["bollinger_lower"] else "n/v")
 
-            # Yahoo News
             st.markdown("### Aktuelle Schlagzeilen (Yahoo Finance)")
             news = fetch_yahoo_news(selected_symbol)
             if news:
