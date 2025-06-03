@@ -15,6 +15,9 @@ def load_ticker_db():
 
 ticker_db = load_ticker_db()
 
+if st.checkbox("Zeige Ticker-Datenbank"):
+    st.dataframe(ticker_db)
+    
 def find_ticker_matches(q):
     q = q.strip().lower()
     return ticker_db[
