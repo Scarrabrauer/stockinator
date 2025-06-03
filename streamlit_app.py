@@ -9,7 +9,7 @@ st.title("Daytrader Pro – Technische Analyse + News")
 
 @st.cache_data
 def load_ticker_db():
-    df = pd.read_csv("ticker_database.csv")
+    df = pd.read_csv("ticker_database_cleaned.csv")
     df.dropna(subset=["YahooTicker"], inplace=True)
     return df
 
