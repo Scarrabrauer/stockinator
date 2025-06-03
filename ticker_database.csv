@@ -1,0 +1,560 @@
+Name,YahooTicker,Synonyme
+Adidas,ADS.DE,dax
+Airbus,AIR.PA,dax
+Allianz,ALV.DE,dax
+BASF,BAS.DE,dax
+Bayer,BAYN.DE,dax
+Beiersdorf,BEI.DE,dax
+BMW,BMW.DE,dax
+Brenntag,BNR.DE,dax
+Commerzbank,CBK.DE,dax
+Continental,CON.DE,dax
+Covestro,1COV.DE,dax
+Daimler Truck,DTG.DE,dax
+Deutsche Bank,DBK.DE,dax
+Deutsche Börse,DB1.DE,dax
+Deutsche Post,DHL.DE,dax
+Deutsche Telekom,DTE.DE,dax
+E.ON,EOAN.DE,dax
+Fresenius,FRE.DE,dax
+Fresenius Medical Care,FME.DE,dax
+Hannover Re,HNR1.DE,dax
+Heidelberg Materials,HEI.DE,dax
+Henkel,HEN3.DE,dax
+Infineon Technologies,IFX.DE,dax
+Mercedes-Benz Group,MBG.DE,dax
+Merck,MRK.DE,dax
+MTU Aero Engines,MTX.DE,dax
+Munich Re,MUV2.DE,dax
+Porsche,P911.DE,dax
+Porsche SE,PAH3.DE,dax
+Qiagen,QIA.DE,dax
+Rheinmetall,RHM.DE,dax
+RWE,RWE.DE,dax
+SAP,SAP.DE,dax
+Sartorius,SRT3.DE,dax
+Siemens,SIE.DE,dax
+Siemens Energy,ENR.DE,dax
+Siemens Healthineers,SHL.DE,dax
+Symrise,SY1.DE,dax
+Volkswagen Group,VOW3.DE,dax
+Vonovia,VNA.DE,dax
+Zalando,ZAL.DE,dax
+Adobe Inc.,ADBE,nasdaq
+Advanced Micro Devices,AMD,nasdaq
+Airbnb,ABNB,nasdaq
+Alphabet Inc. (Class A),GOOGL,nasdaq
+Alphabet Inc. (Class C),GOOG,nasdaq
+Amazon,AMZN,nasdaq
+American Electric Power,AEP,nasdaq
+Amgen,AMGN,nasdaq
+Analog Devices,ADI,nasdaq
+Ansys,ANSS,nasdaq
+Apple Inc.,AAPL,nasdaq
+Applied Materials,AMAT,nasdaq
+AppLovin,APP,nasdaq
+Arm Holdings,ARM,nasdaq
+ASML Holding,ASML,nasdaq
+AstraZeneca,AZN,nasdaq
+Atlassian,TEAM,nasdaq
+Autodesk,ADSK,nasdaq
+Automatic Data Processing,ADP,nasdaq
+Axon Enterprise,AXON,nasdaq
+Baker Hughes,BKR,nasdaq
+Biogen,BIIB,nasdaq
+Booking Holdings,BKNG,nasdaq
+Broadcom,AVGO,nasdaq
+Cadence Design Systems,CDNS,nasdaq
+CDW Corporation,CDW,nasdaq
+Charter Communications,CHTR,nasdaq
+Cintas,CTAS,nasdaq
+Cisco,CSCO,nasdaq
+Coca-Cola Europacific Partners,CCEP,nasdaq
+Cognizant,CTSH,nasdaq
+Comcast,CMCSA,nasdaq
+Constellation Energy,CEG,nasdaq
+Copart,CPRT,nasdaq
+CoStar Group,CSGP,nasdaq
+Costco,COST,nasdaq
+CrowdStrike,CRWD,nasdaq
+CSX Corporation,CSX,nasdaq
+Datadog,DDOG,nasdaq
+DexCom,DXCM,nasdaq
+Diamondback Energy,FANG,nasdaq
+DoorDash,DASH,nasdaq
+Electronic Arts,EA,nasdaq
+Exelon,EXC,nasdaq
+Fastenal,FAST,nasdaq
+Fortinet,FTNT,nasdaq
+GE HealthCare,GEHC,nasdaq
+Gilead Sciences,GILD,nasdaq
+GlobalFoundries,GFS,nasdaq
+Honeywell,HON,nasdaq
+Idexx Laboratories,IDXX,nasdaq
+Intel,INTC,nasdaq
+Intuit,INTU,nasdaq
+Intuitive Surgical,ISRG,nasdaq
+Keurig Dr Pepper,KDP,nasdaq
+KLA Corporation,KLAC,nasdaq
+Kraft Heinz,KHC,nasdaq
+Lam Research,LRCX,nasdaq
+Linde plc,LIN,nasdaq
+Lululemon,LULU,nasdaq
+Marriott International,MAR,nasdaq
+Marvell Technology,MRVL,nasdaq
+Mercado Libre,MELI,nasdaq
+Meta Platforms,META,nasdaq
+Microchip Technology,MCHP,nasdaq
+Micron Technology,MU,nasdaq
+Microsoft,MSFT,nasdaq
+MicroStrategy,MSTR,nasdaq
+Mondelez International,MDLZ,nasdaq
+Monster Beverage,MNST,nasdaq
+"Netflix, Inc.",NFLX,nasdaq
+Nvidia,NVDA,nasdaq
+NXP Semiconductors,NXPI,nasdaq
+O'Reilly Automotive,ORLY,nasdaq
+Old Dominion Freight Line,ODFL,nasdaq
+Onsemi,ON,nasdaq
+Paccar,PCAR,nasdaq
+Palantir Technologies,PLTR,nasdaq
+Palo Alto Networks,PANW,nasdaq
+Paychex,PAYX,nasdaq
+PayPal,PYPL,nasdaq
+PDD Holdings,PDD,nasdaq
+PepsiCo,PEP,nasdaq
+Qualcomm,QCOM,nasdaq
+Regeneron Pharmaceuticals,REGN,nasdaq
+Roper Technologies,ROP,nasdaq
+Ross Stores,ROST,nasdaq
+Shopify,SHOP,nasdaq
+Starbucks,SBUX,nasdaq
+Synopsys,SNPS,nasdaq
+Take-Two Interactive,TTWO,nasdaq
+T-Mobile US,TMUS,nasdaq
+"Tesla, Inc.",TSLA,nasdaq
+Texas Instruments,TXN,nasdaq
+Trade Desk (The),TTD,nasdaq
+Verisk Analytics,VRSK,nasdaq
+Vertex Pharmaceuticals,VRTX,nasdaq
+Warner Bros. Discovery,WBD,nasdaq
+"Workday, Inc.",WDAY,nasdaq
+Xcel Energy,XEL,nasdaq
+Zscaler,ZS,nasdaq
+3M,MMM,Standards&Poor
+A. O. Smith,AOS,Standards&Poor
+Abbott Laboratories,ABT,Standards&Poor
+AbbVie,ABBV,Standards&Poor
+Accenture,ACN,Standards&Poor
+AES Corporation,AES,Standards&Poor
+Aflac,AFL,Standards&Poor
+Agilent Technologies,A,Standards&Poor
+Air Products,APD,Standards&Poor
+Akamai Technologies,AKAM,Standards&Poor
+Albemarle Corporation,ALB,Standards&Poor
+Alexandria Real Estate Equities,ARE,Standards&Poor
+Align Technology,ALGN,Standards&Poor
+Allegion,ALLE,Standards&Poor
+Alliant Energy,LNT,Standards&Poor
+Allstate,ALL,Standards&Poor
+Altria,MO,Standards&Poor
+Amcor,AMCR,Standards&Poor
+Ameren,AEE,Standards&Poor
+American Express,AXP,Standards&Poor
+American International Group,AIG,Standards&Poor
+American Tower,AMT,Standards&Poor
+American Water Works,AWK,Standards&Poor
+Ameriprise Financial,AMP,Standards&Poor
+Ametek,AME,Standards&Poor
+Amphenol,APH,Standards&Poor
+Aon plc,AON,Standards&Poor
+APA Corporation,APA,Standards&Poor
+Apollo Global Management,APO,Standards&Poor
+Aptiv,APTV,Standards&Poor
+Arch Capital Group,ACGL,Standards&Poor
+Archer Daniels Midland,ADM,Standards&Poor
+Arista Networks,ANET,Standards&Poor
+Arthur J. Gallagher & Co.,AJG,Standards&Poor
+Assurant,AIZ,Standards&Poor
+AT&T,T,Standards&Poor
+Atmos Energy,ATO,Standards&Poor
+AutoZone,AZO,Standards&Poor
+AvalonBay Communities,AVB,Standards&Poor
+Avery Dennison,AVY,Standards&Poor
+Ball Corporation,BALL,Standards&Poor
+Bank of America,BAC,Standards&Poor
+Baxter International,BAX,Standards&Poor
+Becton Dickinson,BDX,Standards&Poor
+Berkshire Hathaway,BRK.B,Standards&Poor
+Best Buy,BBY,Standards&Poor
+Bio-Techne,TECH,Standards&Poor
+BlackRock,BLK,Standards&Poor
+Blackstone Inc.,BX,Standards&Poor
+BNY Mellon,BK,Standards&Poor
+Boeing,BA,Standards&Poor
+Boston Scientific,BSX,Standards&Poor
+Bristol Myers Squibb,BMY,Standards&Poor
+Broadridge Financial Solutions,BR,Standards&Poor
+Brown & Brown,BRO,Standards&Poor
+Brown–Forman,BF.B,Standards&Poor
+Builders FirstSource,BLDR,Standards&Poor
+Bunge Global,BG,Standards&Poor
+"BXP, Inc.",BXP,Standards&Poor
+C.H. Robinson,CHRW,Standards&Poor
+Caesars Entertainment,CZR,Standards&Poor
+Camden Property Trust,CPT,Standards&Poor
+Campbell's Company (The),CPB,Standards&Poor
+Capital One,COF,Standards&Poor
+Cardinal Health,CAH,Standards&Poor
+CarMax,KMX,Standards&Poor
+Carnival,CCL,Standards&Poor
+Carrier Global,CARR,Standards&Poor
+Caterpillar Inc.,CAT,Standards&Poor
+Cboe Global Markets,CBOE,Standards&Poor
+CBRE Group,CBRE,Standards&Poor
+Cencora,COR,Standards&Poor
+Centene Corporation,CNC,Standards&Poor
+CenterPoint Energy,CNP,Standards&Poor
+CF Industries,CF,Standards&Poor
+Charles River Laboratories,CRL,Standards&Poor
+Charles Schwab Corporation,SCHW,Standards&Poor
+Chevron Corporation,CVX,Standards&Poor
+Chipotle Mexican Grill,CMG,Standards&Poor
+Chubb Limited,CB,Standards&Poor
+Church & Dwight,CHD,Standards&Poor
+Cigna,CI,Standards&Poor
+Cincinnati Financial,CINF,Standards&Poor
+Citigroup,C,Standards&Poor
+Citizens Financial Group,CFG,Standards&Poor
+Clorox,CLX,Standards&Poor
+CME Group,CME,Standards&Poor
+CMS Energy,CMS,Standards&Poor
+Coca-Cola Company (The),KO,Standards&Poor
+Coinbase,COIN,Standards&Poor
+Colgate-Palmolive,CL,Standards&Poor
+Conagra Brands,CAG,Standards&Poor
+ConocoPhillips,COP,Standards&Poor
+Consolidated Edison,ED,Standards&Poor
+Constellation Brands,STZ,Standards&Poor
+Cooper Companies (The),COO,Standards&Poor
+Corning Inc.,GLW,Standards&Poor
+Corpay,CPAY,Standards&Poor
+Corteva,CTVA,Standards&Poor
+Coterra,CTRA,Standards&Poor
+Crown Castle,CCI,Standards&Poor
+Cummins,CMI,Standards&Poor
+CVS Health,CVS,Standards&Poor
+Danaher Corporation,DHR,Standards&Poor
+Darden Restaurants,DRI,Standards&Poor
+DaVita,DVA,Standards&Poor
+Dayforce,DAY,Standards&Poor
+Deckers Brands,DECK,Standards&Poor
+Deere & Company,DE,Standards&Poor
+Dell Technologies,DELL,Standards&Poor
+Delta Air Lines,DAL,Standards&Poor
+Devon Energy,DVN,Standards&Poor
+Digital Realty,DLR,Standards&Poor
+Dollar General,DG,Standards&Poor
+Dollar Tree,DLTR,Standards&Poor
+Dominion Energy,D,Standards&Poor
+Domino's,DPZ,Standards&Poor
+Dover Corporation,DOV,Standards&Poor
+Dow Inc.,DOW,Standards&Poor
+D. R. Horton,DHI,Standards&Poor
+DTE Energy,DTE,Standards&Poor
+Duke Energy,DUK,Standards&Poor
+DuPont,DD,Standards&Poor
+Eastman Chemical Company,EMN,Standards&Poor
+Eaton Corporation,ETN,Standards&Poor
+eBay Inc.,EBAY,Standards&Poor
+Ecolab,ECL,Standards&Poor
+Edison International,EIX,Standards&Poor
+Edwards Lifesciences,EW,Standards&Poor
+Elevance Health,ELV,Standards&Poor
+Emerson Electric,EMR,Standards&Poor
+Enphase Energy,ENPH,Standards&Poor
+Entergy,ETR,Standards&Poor
+EOG Resources,EOG,Standards&Poor
+EPAM Systems,EPAM,Standards&Poor
+EQT Corporation,EQT,Standards&Poor
+Equifax,EFX,Standards&Poor
+Equinix,EQIX,Standards&Poor
+Equity Residential,EQR,Standards&Poor
+Erie Indemnity,ERIE,Standards&Poor
+Essex Property Trust,ESS,Standards&Poor
+Estée Lauder Companies (The),EL,Standards&Poor
+Everest Group,EG,Standards&Poor
+Evergy,EVRG,Standards&Poor
+Eversource Energy,ES,Standards&Poor
+Expand Energy,EXE,Standards&Poor
+Expedia Group,EXPE,Standards&Poor
+Expeditors International,EXPD,Standards&Poor
+Extra Space Storage,EXR,Standards&Poor
+ExxonMobil,XOM,Standards&Poor
+"F5, Inc.",FFIV,Standards&Poor
+FactSet,FDS,Standards&Poor
+Fair Isaac,FICO,Standards&Poor
+Federal Realty Investment Trust,FRT,Standards&Poor
+FedEx,FDX,Standards&Poor
+Fidelity National Information Services,FIS,Standards&Poor
+Fifth Third Bancorp,FITB,Standards&Poor
+First Solar,FSLR,Standards&Poor
+FirstEnergy,FE,Standards&Poor
+Fiserv,FI,Standards&Poor
+Ford Motor Company,F,Standards&Poor
+Fortive,FTV,Standards&Poor
+Fox Corporation (Class A),FOXA,Standards&Poor
+Fox Corporation (Class B),FOX,Standards&Poor
+Franklin Resources,BEN,Standards&Poor
+Freeport-McMoRan,FCX,Standards&Poor
+Garmin,GRMN,Standards&Poor
+Gartner,IT,Standards&Poor
+GE Aerospace,GE,Standards&Poor
+GE Vernova,GEV,Standards&Poor
+Gen Digital,GEN,Standards&Poor
+Generac,GNRC,Standards&Poor
+General Dynamics,GD,Standards&Poor
+General Mills,GIS,Standards&Poor
+General Motors,GM,Standards&Poor
+Genuine Parts Company,GPC,Standards&Poor
+Global Payments,GPN,Standards&Poor
+Globe Life,GL,Standards&Poor
+GoDaddy,GDDY,Standards&Poor
+Goldman Sachs,GS,Standards&Poor
+Halliburton,HAL,Standards&Poor
+Hartford (The),HIG,Standards&Poor
+Hasbro,HAS,Standards&Poor
+HCA Healthcare,HCA,Standards&Poor
+Healthpeak Properties,DOC,Standards&Poor
+Henry Schein,HSIC,Standards&Poor
+Hershey Company (The),HSY,Standards&Poor
+Hess Corporation,HES,Standards&Poor
+Hewlett Packard Enterprise,HPE,Standards&Poor
+Hilton Worldwide,HLT,Standards&Poor
+Hologic,HOLX,Standards&Poor
+Home Depot (The),HD,Standards&Poor
+Hormel Foods,HRL,Standards&Poor
+Host Hotels & Resorts,HST,Standards&Poor
+Howmet Aerospace,HWM,Standards&Poor
+HP Inc.,HPQ,Standards&Poor
+Hubbell Incorporated,HUBB,Standards&Poor
+Humana,HUM,Standards&Poor
+Huntington Bancshares,HBAN,Standards&Poor
+Huntington Ingalls Industries,HII,Standards&Poor
+IBM,IBM,Standards&Poor
+IDEX Corporation,IEX,Standards&Poor
+Illinois Tool Works,ITW,Standards&Poor
+Incyte,INCY,Standards&Poor
+Ingersoll Rand,IR,Standards&Poor
+Insulet Corporation,PODD,Standards&Poor
+Intercontinental Exchange,ICE,Standards&Poor
+International Flavors & Fragrances,IFF,Standards&Poor
+International Paper,IP,Standards&Poor
+Interpublic Group of Companies (The),IPG,Standards&Poor
+Invesco,IVZ,Standards&Poor
+Invitation Homes,INVH,Standards&Poor
+IQVIA,IQV,Standards&Poor
+Iron Mountain,IRM,Standards&Poor
+J.B. Hunt,JBHT,Standards&Poor
+Jabil,JBL,Standards&Poor
+Jack Henry & Associates,JKHY,Standards&Poor
+Jacobs Solutions,J,Standards&Poor
+Johnson & Johnson,JNJ,Standards&Poor
+Johnson Controls,JCI,Standards&Poor
+JPMorgan Chase,JPM,Standards&Poor
+Juniper Networks,JNPR,Standards&Poor
+Kellanova,K,Standards&Poor
+Kenvue,KVUE,Standards&Poor
+KeyCorp,KEY,Standards&Poor
+Keysight Technologies,KEYS,Standards&Poor
+Kimberly-Clark,KMB,Standards&Poor
+Kimco Realty,KIM,Standards&Poor
+Kinder Morgan,KMI,Standards&Poor
+KKR & Co.,KKR,Standards&Poor
+Kroger,KR,Standards&Poor
+L3Harris,LHX,Standards&Poor
+Labcorp,LH,Standards&Poor
+Lamb Weston,LW,Standards&Poor
+Las Vegas Sands,LVS,Standards&Poor
+Leidos,LDOS,Standards&Poor
+Lennar,LEN,Standards&Poor
+Lennox International,LII,Standards&Poor
+Lilly (Eli),LLY,Standards&Poor
+Live Nation Entertainment,LYV,Standards&Poor
+LKQ Corporation,LKQ,Standards&Poor
+Lockheed Martin,LMT,Standards&Poor
+Loews Corporation,L,Standards&Poor
+Lowe's,LOW,Standards&Poor
+LyondellBasell,LYB,Standards&Poor
+M&T Bank,MTB,Standards&Poor
+Marathon Petroleum,MPC,Standards&Poor
+MarketAxess,MKTX,Standards&Poor
+Marsh McLennan,MMC,Standards&Poor
+Martin Marietta Materials,MLM,Standards&Poor
+Masco,MAS,Standards&Poor
+Mastercard,MA,Standards&Poor
+Match Group,MTCH,Standards&Poor
+McCormick & Company,MKC,Standards&Poor
+McDonald's,MCD,Standards&Poor
+McKesson Corporation,MCK,Standards&Poor
+Medtronic,MDT,Standards&Poor
+Merck & Co.,MRK,Standards&Poor
+MetLife,MET,Standards&Poor
+Mettler Toledo,MTD,Standards&Poor
+MGM Resorts,MGM,Standards&Poor
+Mid-America Apartment Communities,MAA,Standards&Poor
+Moderna,MRNA,Standards&Poor
+Mohawk Industries,MHK,Standards&Poor
+Molina Healthcare,MOH,Standards&Poor
+Molson Coors Beverage Company,TAP,Standards&Poor
+Monolithic Power Systems,MPWR,Standards&Poor
+Moody's Corporation,MCO,Standards&Poor
+Morgan Stanley,MS,Standards&Poor
+Mosaic Company (The),MOS,Standards&Poor
+Motorola Solutions,MSI,Standards&Poor
+MSCI Inc.,MSCI,Standards&Poor
+"Nasdaq, Inc.",NDAQ,Standards&Poor
+NetApp,NTAP,Standards&Poor
+Newmont,NEM,Standards&Poor
+News Corp (Class A),NWSA,Standards&Poor
+News Corp (Class B),NWS,Standards&Poor
+NextEra Energy,NEE,Standards&Poor
+"Nike, Inc.",NKE,Standards&Poor
+NiSource,NI,Standards&Poor
+Nordson Corporation,NDSN,Standards&Poor
+Norfolk Southern,NSC,Standards&Poor
+Northern Trust,NTRS,Standards&Poor
+Northrop Grumman,NOC,Standards&Poor
+Norwegian Cruise Line Holdings,NCLH,Standards&Poor
+NRG Energy,NRG,Standards&Poor
+Nucor,NUE,Standards&Poor
+"NVR, Inc.",NVR,Standards&Poor
+Occidental Petroleum,OXY,Standards&Poor
+Omnicom Group,OMC,Standards&Poor
+Oneok,OKE,Standards&Poor
+Oracle Corporation,ORCL,Standards&Poor
+Otis Worldwide,OTIS,Standards&Poor
+Packaging Corporation of America,PKG,Standards&Poor
+Paramount Global,PARA,Standards&Poor
+Parker Hannifin,PH,Standards&Poor
+Paycom,PAYC,Standards&Poor
+Pentair,PNR,Standards&Poor
+Pfizer,PFE,Standards&Poor
+PG&E Corporation,PCG,Standards&Poor
+Philip Morris International,PM,Standards&Poor
+Phillips 66,PSX,Standards&Poor
+Pinnacle West Capital,PNW,Standards&Poor
+PNC Financial Services,PNC,Standards&Poor
+Pool Corporation,POOL,Standards&Poor
+PPG Industries,PPG,Standards&Poor
+PPL Corporation,PPL,Standards&Poor
+Principal Financial Group,PFG,Standards&Poor
+Procter & Gamble,PG,Standards&Poor
+Progressive Corporation,PGR,Standards&Poor
+Prologis,PLD,Standards&Poor
+Prudential Financial,PRU,Standards&Poor
+Public Service Enterprise Group,PEG,Standards&Poor
+PTC Inc.,PTC,Standards&Poor
+Public Storage,PSA,Standards&Poor
+PulteGroup,PHM,Standards&Poor
+Quanta Services,PWR,Standards&Poor
+Quest Diagnostics,DGX,Standards&Poor
+Ralph Lauren Corporation,RL,Standards&Poor
+Raymond James Financial,RJF,Standards&Poor
+RTX Corporation,RTX,Standards&Poor
+Realty Income,O,Standards&Poor
+Regency Centers,REG,Standards&Poor
+Regions Financial Corporation,RF,Standards&Poor
+Republic Services,RSG,Standards&Poor
+ResMed,RMD,Standards&Poor
+Revvity,RVTY,Standards&Poor
+Rockwell Automation,ROK,Standards&Poor
+"Rollins, Inc.",ROL,Standards&Poor
+Royal Caribbean Group,RCL,Standards&Poor
+S&P Global,SPGI,Standards&Poor
+Salesforce,CRM,Standards&Poor
+SBA Communications,SBAC,Standards&Poor
+Schlumberger,SLB,Standards&Poor
+Seagate Technology,STX,Standards&Poor
+Sempra,SRE,Standards&Poor
+ServiceNow,NOW,Standards&Poor
+Sherwin-Williams,SHW,Standards&Poor
+Simon Property Group,SPG,Standards&Poor
+Skyworks Solutions,SWKS,Standards&Poor
+J.M. Smucker Company (The),SJM,Standards&Poor
+Smurfit Westrock,SW,Standards&Poor
+Snap-on,SNA,Standards&Poor
+Solventum,SOLV,Standards&Poor
+Southern Company,SO,Standards&Poor
+Southwest Airlines,LUV,Standards&Poor
+Stanley Black & Decker,SWK,Standards&Poor
+State Street Corporation,STT,Standards&Poor
+Steel Dynamics,STLD,Standards&Poor
+Steris,STE,Standards&Poor
+Stryker Corporation,SYK,Standards&Poor
+Supermicro,SMCI,Standards&Poor
+Synchrony Financial,SYF,Standards&Poor
+Sysco,SYY,Standards&Poor
+T. Rowe Price,TROW,Standards&Poor
+"Tapestry, Inc.",TPR,Standards&Poor
+Targa Resources,TRGP,Standards&Poor
+Target Corporation,TGT,Standards&Poor
+TE Connectivity,TEL,Standards&Poor
+Teledyne Technologies,TDY,Standards&Poor
+Teradyne,TER,Standards&Poor
+Texas Pacific Land Corporation,TPL,Standards&Poor
+Textron,TXT,Standards&Poor
+Thermo Fisher Scientific,TMO,Standards&Poor
+TJX Companies,TJX,Standards&Poor
+TKO Group Holdings,TKO,Standards&Poor
+Tractor Supply,TSCO,Standards&Poor
+Trane Technologies,TT,Standards&Poor
+TransDigm Group,TDG,Standards&Poor
+Travelers Companies (The),TRV,Standards&Poor
+Trimble Inc.,TRMB,Standards&Poor
+Truist Financial,TFC,Standards&Poor
+Tyler Technologies,TYL,Standards&Poor
+Tyson Foods,TSN,Standards&Poor
+U.S. Bancorp,USB,Standards&Poor
+Uber,UBER,Standards&Poor
+"UDR, Inc.",UDR,Standards&Poor
+Ulta Beauty,ULTA,Standards&Poor
+Union Pacific Corporation,UNP,Standards&Poor
+United Airlines Holdings,UAL,Standards&Poor
+United Parcel Service,UPS,Standards&Poor
+United Rentals,URI,Standards&Poor
+UnitedHealth Group,UNH,Standards&Poor
+Universal Health Services,UHS,Standards&Poor
+Valero Energy,VLO,Standards&Poor
+Ventas,VTR,Standards&Poor
+Veralto,VLTO,Standards&Poor
+Verisign,VRSN,Standards&Poor
+Verizon,VZ,Standards&Poor
+Viatris,VTRS,Standards&Poor
+Vici Properties,VICI,Standards&Poor
+Visa Inc.,V,Standards&Poor
+Vistra Corp.,VST,Standards&Poor
+Vulcan Materials Company,VMC,Standards&Poor
+W. R. Berkley Corporation,WRB,Standards&Poor
+W. W. Grainger,GWW,Standards&Poor
+Wabtec,WAB,Standards&Poor
+Walgreens Boots Alliance,WBA,Standards&Poor
+Walmart,WMT,Standards&Poor
+Walt Disney Company (The),DIS,Standards&Poor
+Waste Management,WM,Standards&Poor
+Waters Corporation,WAT,Standards&Poor
+WEC Energy Group,WEC,Standards&Poor
+Wells Fargo,WFC,Standards&Poor
+Welltower,WELL,Standards&Poor
+West Pharmaceutical Services,WST,Standards&Poor
+Western Digital,WDC,Standards&Poor
+Weyerhaeuser,WY,Standards&Poor
+"Williams-Sonoma, Inc.",WSM,Standards&Poor
+Williams Companies,WMB,Standards&Poor
+Willis Towers Watson,WTW,Standards&Poor
+Wynn Resorts,WYNN,Standards&Poor
+Xylem Inc.,XYL,Standards&Poor
+Yum! Brands,YUM,Standards&Poor
+Zebra Technologies,ZBRA,Standards&Poor
+Zimmer Biomet,ZBH,Standards&Poor
+Zoetis,ZTS,Standards&Poor
