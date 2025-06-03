@@ -1,0 +1,519 @@
+Name,Synonyme,YahooTicker
+Adobe Inc.,"adbe, adobe",ADBE
+Advanced Micro Devices,"advanced, amd, devices, micro",AMD
+Airbnb,"abnb, airbnb",ABNB
+Alphabet Inc. (Class A),"(class, a), alphabet, googl",GOOGL
+Alphabet Inc. (Class C),"(class, alphabet, c), goog",GOOG
+Amazon,"amazon, amzn",AMZN
+American Electric Power,"aep, american, electric, power",AEP
+Amgen,"amgen, amgn",AMGN
+Analog Devices,"adi, analog, devices",ADI
+Ansys,"anss, ansys",ANSS
+Apple Inc.,"aapl, apple",AAPL
+Applied Materials,"amat, applied, materials",AMAT
+AppLovin,"app, applovin",APP
+Arm Holdings,"arm, holdings",ARM
+ASML Holding,"asml, holding",ASML
+AstraZeneca,"astrazeneca, azn",AZN
+Atlassian,"atlassian, team",TEAM
+Autodesk,"adsk, autodesk",ADSK
+Automatic Data Processing,"adp, automatic, data, processing",ADP
+Axon Enterprise,"axon, enterpri",AXON
+Baker Hughes,"baker, bkr, hughes",BKR
+Biogen,"biib, biogen",BIIB
+Booking Holdings,"bkng, booking, holdings",BKNG
+Broadcom,"avgo, broadcom",AVGO
+Cadence Design Systems,"cadence, cdns, design, systems",CDNS
+CDW Corporation,"cdw, corporation",CDW
+Charter Communications,"charter, chtr, communications",CHTR
+Cintas,"cintas, ctas",CTAS
+Cisco,"cisco, csco",CSCO
+Coca-Cola Europacific Partners,"ccep, coca-cola, europacific, partners",CCEP
+Cognizant,"cognizant, ctsh",CTSH
+Comcast,"cmcsa, comcast",CMCSA
+Constellation Energy,"ceg, constellation, energy",CEG
+Copart,"copart, cprt",CPRT
+CoStar Group,"costar, csgp, group",CSGP
+Costco,"cost, costco",COST
+CrowdStrike,"crowdstrike, crwd",CRWD
+CSX Corporation,"corporation, csx",CSX
+Datadog,"datadog, ddog",DDOG
+DexCom,"dexcom, dxcm",DXCM
+Diamondback Energy,"diamondback, energy, fang",FANG
+DoorDash,"dash, doordash",DASH
+Electronic Arts,"arts, ea, electronic",EA
+Exelon,"exc, exelon",EXC
+Fastenal,"fast, fastenal",FAST
+Fortinet,"fortinet, ftnt",FTNT
+GE HealthCare,"ge, gehc, healthcare",GEHC
+Gilead Sciences,"gild, gilead, sciences",GILD
+GlobalFoundries,"gfs, globalfoundries",GFS
+Honeywell,"hon, honeywell",HON
+Idexx Laboratories,"idexx, idxx, laboratories",IDXX
+Intel,"intc, intel",INTC
+Intuit,"intu, intuit",INTU
+Intuitive Surgical,"intuitive, isrg, surgical",ISRG
+Keurig Dr Pepper,"dr, kdp, keurig, pepper",KDP
+KLA Corporation,"corporation, kla, klac",KLAC
+Kraft Heinz,"heinz, khc, kraft",KHC
+Lam Research,"lam, lrcx, rearch",LRCX
+Linde plc,"lin, linde, plc",LIN
+Lululemon,"lulu, lululemon",LULU
+Marriott International,"international, mar, marriott",MAR
+Marvell Technology,"marvell, mrvl, technology",MRVL
+Mercado Libre,"libre, meli, mercado",MELI
+Meta Platforms,"meta, platforms",META
+Microchip Technology,"mchp, microchip, technology",MCHP
+Micron Technology,"micron, mu, technology",MU
+Microsoft,"microsoft, msft",MSFT
+MicroStrategy,"microstrategy, mstr",MSTR
+Mondelez International,"international, mdlz, mondelez",MDLZ
+Monster Beverage,"bevere, mnst, monster",MNST
+"Netflix, Inc.","netflix,, nflx",NFLX
+Nvidia,"nvda, nvidia",NVDA
+NXP Semiconductors,"miconductors, nxp, nxpi",NXPI
+O'Reilly Automotive,"automotive, o'reilly, orly",ORLY
+Old Dominion Freight Line,"dominion, freight, line, odfl, old",ODFL
+Onsemi,"on, onmi",ON
+Paccar,"paccar, pcar",PCAR
+Palantir Technologies,"palantir, pltr, technologies",PLTR
+Palo Alto Networks,"alto, networks, palo, panw",PANW
+Paychex,"paychex, payx",PAYX
+PayPal,"paypal, pypl",PYPL
+PDD Holdings,"holdings, pdd",PDD
+PepsiCo,"pep, pepsico",PEP
+Qualcomm,"qcom, qualcomm",QCOM
+Regeneron Pharmaceuticals,"pharmaceuticals, regeneron, regn",REGN
+Roper Technologies,"rop, roper, technologies",ROP
+Ross Stores,"ross, rost, stores",ROST
+Shopify,"shop, shopify",SHOP
+Starbucks,"sbux, starbucks",SBUX
+Synopsys,"snps, synopsys",SNPS
+Take-Two Interactive,"interactive, take-two, ttwo",TTWO
+T-Mobile US,"t-mobile, tmus, us",TMUS
+"Tesla, Inc.","tesla,, tsla",TSLA
+Texas Instruments,"instruments, texas, txn",TXN
+Trade Desk (The),"(the), desk, trade, ttd",TTD
+Verisk Analytics,"analytics, verisk, vrsk",VRSK
+Vertex Pharmaceuticals,"pharmaceuticals, vertex, vrtx",VRTX
+Warner Bros. Discovery,"bros., discovery, warner, wbd",WBD
+"Workday, Inc.","wday, workday,",WDAY
+Xcel Energy,"energy, xcel, xel",XEL
+Zscaler,"zs, zscaler",ZS
+3M,"3m, mmm",MMM
+A. O. Smith,"a., aos, o., smith",AOS
+Abbott Laboratories,"abbott, abt, laboratories",ABT
+AbbVie,"abbv, abbvie",ABBV
+Accenture,"accenture, acn",ACN
+AES Corporation,"aes, corporation",AES
+Aflac,"afl, aflac",AFL
+Agilent Technologies,"a, ilent, technologies",A
+Air Products,"air, apd, products",APD
+Akamai Technologies,"akam, akamai, technologies",AKAM
+Albemarle Corporation,"alb, albemarle, corporation",ALB
+Alexandria Real Estate Equities,"alexandria, are, equities, estate, real",ARE
+Align Technology,"algn, align, technology",ALGN
+Allegion,"alle, allegion",ALLE
+Alliant Energy,"alliant, energy, lnt",LNT
+Allstate,"all, allstate",ALL
+Altria,"altria, mo",MO
+Amcor,"amcor, amcr",AMCR
+Ameren,"aee, ameren",AEE
+American Express,"american, axp, express",AXP
+American International Group,"aig, american, group, international",AIG
+American Tower,"american, amt, tower",AMT
+American Water Works,"american, awk, water, works",AWK
+Ameriprise Financial,"ameripri, amp, financial",AMP
+Ametek,"ame, ametek",AME
+Amphenol,"amphenol, aph",APH
+Aon plc,"aon, plc",AON
+APA Corporation,"apa, corporation",APA
+Apollo Global Management,"apo, apollo, global, manement",APO
+Aptiv,"aptiv, aptv",APTV
+Arch Capital Group,"acgl, arch, capital, group",ACGL
+Archer Daniels Midland,"adm, archer, daniels, midland",ADM
+Arista Networks,"anet, arista, networks",ANET
+Arthur J. Gallagher & Co.,"&, ajg, arthur, co., gallher, j.",AJG
+Assurant,"aiz, assurant",AIZ
+AT&T,"at&t, t",T
+Atmos Energy,"atmos, ato, energy",ATO
+AutoZone,"autozone, azo",AZO
+AvalonBay Communities,"avalonbay, avb, communities",AVB
+Avery Dennison,"avery, avy, dennison",AVY
+Ball Corporation,"ball, corporation",BALL
+Bank of America,"america, bac, bank, of",BAC
+Baxter International,"bax, baxter, international",BAX
+Becton Dickinson,"bdx, becton, dickinson",BDX
+Berkshire Hathaway,"berkshire, brk, hathaway",BRK.B
+Best Buy,"bby, best, buy",BBY
+Bio-Techne,"bio-techne, tech",TECH
+BlackRock,"blackrock, blk",BLK
+Blackstone Inc.,"blackstone, bx",BX
+BNY Mellon,"bk, bny, mellon",BK
+Boeing,"ba, boeing",BA
+Boston Scientific,"boston, bsx, scientific",BSX
+Bristol Myers Squibb,"bmy, bristol, myers, squibb",BMY
+Broadridge Financial Solutions,"br, broadridge, financial, solutions",BR
+Brown & Brown,"&, bro, brown",BRO
+Brown–Forman,"bf, brown–forman",BF.B
+Builders FirstSource,"bldr, builders, firstsource",BLDR
+Bunge Global,"bg, bunge, global",BG
+"BXP, Inc.","bxp, bxp,",BXP
+C.H. Robinson,"c.h., chrw, robinson",CHRW
+Caesars Entertainment,"caesars, czr, entertainment",CZR
+Camden Property Trust,"camden, cpt, property, trust",CPT
+Campbell's Company (The),"(the), campbell's, company, cpb",CPB
+Capital One,"capital, cof, one",COF
+Cardinal Health,"cah, cardinal, health",CAH
+CarMax,"carmax, kmx",KMX
+Carnival,"carnival, ccl",CCL
+Carrier Global,"carr, carrier, global",CARR
+Caterpillar Inc.,"cat, caterpillar",CAT
+Cboe Global Markets,"cboe, global, markets",CBOE
+CBRE Group,"cbre, group",CBRE
+Cencora,"cencora, cor",COR
+Centene Corporation,"centene, cnc, corporation",CNC
+CenterPoint Energy,"centerpoint, cnp, energy",CNP
+CF Industries,"cf, industries",CF
+Charles River Laboratories,"charles, crl, laboratories, river",CRL
+Charles Schwab Corporation,"charles, corporation, schw, schwab",SCHW
+Chevron Corporation,"chevron, corporation, cvx",CVX
+Chipotle Mexican Grill,"chipotle, cmg, grill, mexican",CMG
+Chubb Limited,"cb, chubb, limited",CB
+Church & Dwight,"&, chd, church, dwight",CHD
+Cigna,"ci, cigna",CI
+Cincinnati Financial,"cincinnati, cinf, financial",CINF
+Citigroup,"c, citigroup",C
+Citizens Financial Group,"cfg, citizens, financial, group",CFG
+Clorox,"clorox, clx",CLX
+CME Group,"cme, group",CME
+CMS Energy,"cms, energy",CMS
+Coca-Cola Company (The),"(the), coca-cola, company, ko",KO
+Coinbase,"coin, coinba",COIN
+Colgate-Palmolive,"cl, colgate-palmolive",CL
+Conagra Brands,"brands, cag, conra",CAG
+ConocoPhillips,"conocophillips, cop",COP
+Consolidated Edison,"consolidated, ed, edison",ED
+Constellation Brands,"brands, constellation, stz",STZ
+Cooper Companies (The),"(the), companies, coo, cooper",COO
+Corning Inc.,"corning, glw",GLW
+Corpay,"corpay, cpay",CPAY
+Corteva,"corteva, ctva",CTVA
+Coterra,"coterra, ctra",CTRA
+Crown Castle,"castle, cci, crown",CCI
+Cummins,"cmi, cummins",CMI
+CVS Health,"cvs, health",CVS
+Danaher Corporation,"corporation, danaher, dhr",DHR
+Darden Restaurants,"darden, dri, restaurants",DRI
+DaVita,"davita, dva",DVA
+Dayforce,"day, dayforce",DAY
+Deckers Brands,"brands, deck, deckers",DECK
+Deere & Company,"&, company, de, deere",DE
+Dell Technologies,"dell, technologies",DELL
+Delta Air Lines,"air, dal, delta, lines",DAL
+Devon Energy,"devon, dvn, energy",DVN
+Digital Realty,"digital, dlr, realty",DLR
+Dollar General,"dg, dollar, general",DG
+Dollar Tree,"dltr, dollar, tree",DLTR
+Dominion Energy,"d, dominion, energy",D
+Domino's,"domino's, dpz",DPZ
+Dover Corporation,"corporation, dov, dover",DOV
+Dow Inc.,dow,DOW
+D. R. Horton,"d., dhi, horton, r.",DHI
+DTE Energy,"dte, energy",DTE
+Duke Energy,"duk, duke, energy",DUK
+DuPont,"dd, dupont",DD
+Eastman Chemical Company,"chemical, company, eastman, emn",EMN
+Eaton Corporation,"corporation, eaton, etn",ETN
+eBay Inc.,ebay,EBAY
+Ecolab,"ecl, ecolab",ECL
+Edison International,"edison, eix, international",EIX
+Edwards Lifesciences,"edwards, ew, lifesciences",EW
+Elevance Health,"elevance, elv, health",ELV
+Emerson Electric,"electric, emerson, emr",EMR
+Enphase Energy,"energy, enph, enpha",ENPH
+Entergy,"entergy, etr",ETR
+EOG Resources,"eog, resources",EOG
+EPAM Systems,"epam, systems",EPAM
+EQT Corporation,"corporation, eqt",EQT
+Equifax,"efx, equifax",EFX
+Equinix,"eqix, equinix",EQIX
+Equity Residential,"eqr, equity, residential",EQR
+Erie Indemnity,"erie, indemnity",ERIE
+Essex Property Trust,"ess, esx, property, trust",ESS
+Estée Lauder Companies (The),"(the), companies, el, estée, lauder",EL
+Everest Group,"eg, everest, group",EG
+Evergy,"evergy, evrg",EVRG
+Eversource Energy,"energy, es, eversource",ES
+Expand Energy,"energy, exe, expand",EXE
+Expedia Group,"expe, expedia, group",EXPE
+Expeditors International,"expd, expeditors, international",EXPD
+Extra Space Storage,"exr, extra, space, store",EXR
+ExxonMobil,"exxonmobil, xom",XOM
+"F5, Inc.","f5,, ffiv",FFIV
+FactSet,"factt, fds",FDS
+Fair Isaac,"fair, fico, isaac",FICO
+Federal Realty Investment Trust,"federal, frt, investment, realty, trust",FRT
+FedEx,"fdx, fedex",FDX
+Fidelity National Information Services,"fidelity, fis, information, national, rvices",FIS
+Fifth Third Bancorp,"bancorp, fifth, fitb, third",FITB
+First Solar,"first, fslr, solar",FSLR
+FirstEnergy,"fe, firstenergy",FE
+Fiserv,"fi, firv",FI
+Ford Motor Company,"company, f, ford, motor",F
+Fortive,"fortive, ftv",FTV
+Fox Corporation (Class A),"(class, a), corporation, fox, foxa",FOXA
+Fox Corporation (Class B),"(class, b), corporation, fox",FOX
+Franklin Resources,"ben, franklin, resources",BEN
+Freeport-McMoRan,"fcx, freeport-mcmoran",FCX
+Garmin,"garmin, grmn",GRMN
+Gartner,"gartner, it",IT
+GE Aerospace,"aerospace, ge",GE
+GE Vernova,"ge, gev, vernova",GEV
+Gen Digital,"digital, gen",GEN
+Generac,"generac, gnrc",GNRC
+General Dynamics,"dynamics, gd, general",GD
+General Mills,"general, gis, mills",GIS
+General Motors,"general, gm, motors",GM
+Genuine Parts Company,"company, genuine, gpc, parts",GPC
+Global Payments,"global, gpn, payments",GPN
+Globe Life,"gl, globe, life",GL
+GoDaddy,"gddy, godaddy",GDDY
+Goldman Sachs,"goldman, gs, sachs",GS
+Halliburton,"hal, halliburton",HAL
+Hartford (The),"(the), hartford, hig",HIG
+Hasbro,"has, hasbro",HAS
+HCA Healthcare,"hca, healthcare",HCA
+Healthpeak Properties,"doc, healthpeak, properties",DOC
+Henry Schein,"henry, hsic, schein",HSIC
+Hershey Company (The),"(the), company, hershey, hsy",HSY
+Hess Corporation,"corporation, hes, hess",HES
+Hewlett Packard Enterprise,"enterpri, hewlett, hpe, packard",HPE
+Hilton Worldwide,"hilton, hlt, worldwide",HLT
+Hologic,"hologic, holx",HOLX
+Home Depot (The),"(the), depot, hd, home",HD
+Hormel Foods,"foods, hormel, hrl",HRL
+Host Hotels & Resorts,"&, host, hotels, hst, resorts",HST
+Howmet Aerospace,"aerospace, howmet, hwm",HWM
+HP Inc.,"hp, hpq",HPQ
+Hubbell Incorporated,"hubb, hubbell, incorporated",HUBB
+Humana,"hum, humana",HUM
+Huntington Bancshares,"bancshares, hban, huntington",HBAN
+Huntington Ingalls Industries,"hii, huntington, industries, ingalls",HII
+IBM,ibm,IBM
+IDEX Corporation,"corporation, idex, iex",IEX
+Illinois Tool Works,"illinois, itw, tool, works",ITW
+Incyte,"incy, incyte",INCY
+Ingersoll Rand,"ingersoll, ir, rand",IR
+Insulet Corporation,"corporation, insulet, podd",PODD
+Intercontinental Exchange,"exchange, ice, intercontinental",ICE
+International Flavors & Fragrances,"&, flavors, frrances, iff, international",IFF
+International Paper,"international, ip, paper",IP
+Interpublic Group of Companies (The),"(the), companies, group, interpublic, ipg, of",IPG
+Invesco,"invesco, ivz",IVZ
+Invitation Homes,"homes, invh, invitation",INVH
+IQVIA,"iqv, iqvia",IQV
+Iron Mountain,"irm, iron, mountain",IRM
+J.B. Hunt,"hunt, j.b., jbht",JBHT
+Jabil,"jabil, jbl",JBL
+Jack Henry & Associates,"&, associates, henry, jack, jkhy",JKHY
+Jacobs Solutions,"j, jacobs, solutions",J
+Johnson & Johnson,"&, jnj, johnson",JNJ
+Johnson Controls,"controls, jci, johnson",JCI
+JPMorgan Chase,"cha, jpm, jpmorgan",JPM
+Juniper Networks,"jnpr, juniper, networks",JNPR
+Kellanova,"k, kellanova",K
+Kenvue,"kenvue, kvue",KVUE
+KeyCorp,"key, keycorp",KEY
+Keysight Technologies,"keys, keysight, technologies",KEYS
+Kimberly-Clark,"kimberly-clark, kmb",KMB
+Kimco Realty,"kim, kimco, realty",KIM
+Kinder Morgan,"kinder, kmi, morgan",KMI
+KKR & Co.,"&, co., kkr",KKR
+Kroger,"kr, kroger",KR
+L3Harris,"l3harris, lhx",LHX
+Labcorp,"labcorp, lh",LH
+Lamb Weston,"lamb, lw, weston",LW
+Las Vegas Sands,"las, lvs, sands, vegas",LVS
+Leidos,"ldos, leidos",LDOS
+Lennar,"len, lennar",LEN
+Lennox International,"international, lennox, lii",LII
+Lilly (Eli),"(eli), lilly, lly",LLY
+Live Nation Entertainment,"entertainment, live, lyv, nation",LYV
+LKQ Corporation,"corporation, lkq",LKQ
+Lockheed Martin,"lmt, lockheed, martin",LMT
+Loews Corporation,"corporation, l, loews",L
+Lowe's,"low, lowe's",LOW
+LyondellBasell,"lyb, lyondellball",LYB
+M&T Bank,"bank, m&t, mtb",MTB
+Marathon Petroleum,"marathon, mpc, petroleum",MPC
+MarketAxess,"marketaxess, mktx",MKTX
+Marsh McLennan,"marsh, mclennan, mmc",MMC
+Martin Marietta Materials,"marietta, martin, materials, mlm",MLM
+Masco,"mas, masco",MAS
+Mastercard,"ma, mastercard",MA
+Match Group,"group, match, mtch",MTCH
+McCormick & Company,"&, company, mccormick, mkc",MKC
+McDonald's,"mcd, mcdonald's",MCD
+McKesson Corporation,"corporation, mck, mckesson",MCK
+Medtronic,"mdt, medtronic",MDT
+Merck & Co.,"&, co., merck, mrk",MRK
+MetLife,"met, metlife",MET
+Mettler Toledo,"mettler, mtd, toledo",MTD
+MGM Resorts,"mgm, resorts",MGM
+Mid-America Apartment Communities,"apartment, communities, maa, mid-america",MAA
+Moderna,"moderna, mrna",MRNA
+Mohawk Industries,"industries, mhk, mohawk",MHK
+Molina Healthcare,"healthcare, moh, molina",MOH
+Molson Coors Beverage Company,"bevere, company, coors, molson, tap",TAP
+Monolithic Power Systems,"monolithic, mpwr, power, systems",MPWR
+Moody's Corporation,"corporation, mco, moody's",MCO
+Morgan Stanley,"morgan, ms, stanley",MS
+Mosaic Company (The),"(the), company, mos, mosaic",MOS
+Motorola Solutions,"motorola, msi, solutions",MSI
+MSCI Inc.,msci,MSCI
+"Nasdaq, Inc.","nasdaq,, ndaq",NDAQ
+NetApp,"netapp, ntap",NTAP
+Newmont,"nem, newmont",NEM
+News Corp (Class A),"(class, a), corp, news, nwsa",NWSA
+News Corp (Class B),"(class, b), corp, news, nws",NWS
+NextEra Energy,"energy, nee, nextera",NEE
+"Nike, Inc.","nike,, nke",NKE
+NiSource,"ni, nisource",NI
+Nordson Corporation,"corporation, ndsn, nordson",NDSN
+Norfolk Southern,"norfolk, nsc, southern",NSC
+Northern Trust,"northern, ntrs, trust",NTRS
+Northrop Grumman,"grumman, noc, northrop",NOC
+Norwegian Cruise Line Holdings,"crui, holdings, line, nclh, norwegian",NCLH
+NRG Energy,"energy, nrg",NRG
+Nucor,"nucor, nue",NUE
+"NVR, Inc.","nvr, nvr,",NVR
+Occidental Petroleum,"occidental, oxy, petroleum",OXY
+Omnicom Group,"group, omc, omnicom",OMC
+Oneok,"oke, oneok",OKE
+Oracle Corporation,"corporation, oracle, orcl",ORCL
+Otis Worldwide,"otis, worldwide",OTIS
+Packaging Corporation of America,"america, corporation, of, packing, pkg",PKG
+Paramount Global,"global, para, paramount",PARA
+Parker Hannifin,"hannifin, parker, ph",PH
+Paycom,"payc, paycom",PAYC
+Pentair,"pentair, pnr",PNR
+Pfizer,"pfe, pfizer",PFE
+PG&E Corporation,"corporation, pcg, pg&e",PCG
+Philip Morris International,"international, morris, philip, pm",PM
+Phillips 66,"66, phillips, psx",PSX
+Pinnacle West Capital,"capital, pinnacle, pnw, west",PNW
+PNC Financial Services,"financial, pnc, rvices",PNC
+Pool Corporation,"corporation, pool",POOL
+PPG Industries,"industries, ppg",PPG
+PPL Corporation,"corporation, ppl",PPL
+Principal Financial Group,"financial, group, pfg, principal",PFG
+Procter & Gamble,"&, gamble, pg, procter",PG
+Progressive Corporation,"corporation, pgr, progressive",PGR
+Prologis,"pld, prologis",PLD
+Prudential Financial,"financial, pru, prudential",PRU
+Public Service Enterprise Group,"enterpri, group, peg, public, rvice",PEG
+PTC Inc.,ptc,PTC
+Public Storage,"psa, public, store",PSA
+PulteGroup,"phm, pultegroup",PHM
+Quanta Services,"pwr, quanta, rvices",PWR
+Quest Diagnostics,"dgx, dinostics, quest",DGX
+Ralph Lauren Corporation,"corporation, lauren, ralph, rl",RL
+Raymond James Financial,"financial, james, raymond, rjf",RJF
+RTX Corporation,"corporation, rtx",RTX
+Realty Income,"income, o, realty",O
+Regency Centers,"centers, reg, regency",REG
+Regions Financial Corporation,"corporation, financial, regions, rf",RF
+Republic Services,"republic, rsg, rvices",RSG
+ResMed,"resmed, rmd",RMD
+Revvity,"revvity, rvty",RVTY
+Rockwell Automation,"automation, rockwell, rok",ROK
+"Rollins, Inc.","rol, rollins,",ROL
+Royal Caribbean Group,"caribbean, group, rcl, royal",RCL
+S&P Global,"global, s&p, spgi",SPGI
+Salesforce,"crm, salesforce",CRM
+SBA Communications,"communications, sba, sbac",SBAC
+Schlumberger,"schlumberger, slb",SLB
+Seagate Technology,"ate, stx, technology",STX
+Sempra,"mpra, sre",SRE
+ServiceNow,"now, rvicenow",NOW
+Sherwin-Williams,"sherwin-williams, shw",SHW
+Simon Property Group,"group, property, simon, spg",SPG
+Skyworks Solutions,"skyworks, solutions, swks",SWKS
+J.M. Smucker Company (The),"(the), company, j.m., sjm, smucker",SJM
+Smurfit Westrock,"smurfit, sw, westrock",SW
+Snap-on,"sna, snap-on",SNA
+Solventum,"solv, solventum",SOLV
+Southern Company,"company, so, southern",SO
+Southwest Airlines,"airlines, luv, southwest",LUV
+Stanley Black & Decker,"&, black, decker, stanley, swk",SWK
+State Street Corporation,"corporation, state, street, stt",STT
+Steel Dynamics,"dynamics, steel, stld",STLD
+Steris,"ste, steris",STE
+Stryker Corporation,"corporation, stryker, syk",SYK
+Supermicro,"smci, supermicro",SMCI
+Synchrony Financial,"financial, syf, synchrony",SYF
+Sysco,"sysco, syy",SYY
+T. Rowe Price,"price, rowe, t., trow",TROW
+"Tapestry, Inc.","tapestry,, tpr",TPR
+Targa Resources,"resources, targa, trgp",TRGP
+Target Corporation,"corporation, target, tgt",TGT
+TE Connectivity,"connectivity, te, tel",TEL
+Teledyne Technologies,"tdy, technologies, teledyne",TDY
+Teradyne,"ter, teradyne",TER
+Texas Pacific Land Corporation,"corporation, land, pacific, texas, tpl",TPL
+Textron,"textron, txt",TXT
+Thermo Fisher Scientific,"fisher, scientific, thermo, tmo",TMO
+TJX Companies,"companies, tjx",TJX
+TKO Group Holdings,"group, holdings, tko",TKO
+Tractor Supply,"supply, tractor, tsco",TSCO
+Trane Technologies,"technologies, trane, tt",TT
+TransDigm Group,"group, tdg, transdigm",TDG
+Travelers Companies (The),"(the), companies, travelers, trv",TRV
+Trimble Inc.,"trimble, trmb",TRMB
+Truist Financial,"financial, tfc, truist",TFC
+Tyler Technologies,"technologies, tyl, tyler",TYL
+Tyson Foods,"foods, tsn, tyson",TSN
+U.S. Bancorp,"bancorp, u.s., usb",USB
+Uber,uber,UBER
+"UDR, Inc.","udr, udr,",UDR
+Ulta Beauty,"beauty, ulta",ULTA
+Union Pacific Corporation,"corporation, pacific, union, unp",UNP
+United Airlines Holdings,"airlines, holdings, ual, united",UAL
+United Parcel Service,"parcel, rvice, united, ups",UPS
+United Rentals,"rentals, united, uri",URI
+UnitedHealth Group,"group, unh, unitedhealth",UNH
+Universal Health Services,"health, rvices, uhs, universal",UHS
+Valero Energy,"energy, valero, vlo",VLO
+Ventas,"ventas, vtr",VTR
+Veralto,"veralto, vlto",VLTO
+Verisign,"verisign, vrsn",VRSN
+Verizon,"verizon, vz",VZ
+Viatris,"viatris, vtrs",VTRS
+Vici Properties,"properties, vici",VICI
+Visa Inc.,"v, visa",V
+Vistra Corp.,"vistra, vst",VST
+Vulcan Materials Company,"company, materials, vmc, vulcan",VMC
+W. R. Berkley Corporation,"berkley, corporation, r., w., wrb",WRB
+W. W. Grainger,"grainger, gww, w.",GWW
+Wabtec,"wab, wabtec",WAB
+Walgreens Boots Alliance,"alliance, boots, walgreens, wba",WBA
+Walmart,"walmart, wmt",WMT
+Walt Disney Company (The),"(the), company, dis, disney, walt",DIS
+Waste Management,"manement, waste, wm",WM
+Waters Corporation,"corporation, wat, waters",WAT
+WEC Energy Group,"energy, group, wec",WEC
+Wells Fargo,"fargo, wells, wfc",WFC
+Welltower,"well, welltower",WELL
+West Pharmaceutical Services,"pharmaceutical, rvices, west, wst",WST
+Western Digital,"digital, wdc, western",WDC
+Weyerhaeuser,"weyerhaeur, wy",WY
+"Williams-Sonoma, Inc.","williams-sonoma,, wsm",WSM
+Williams Companies,"companies, williams, wmb",WMB
+Willis Towers Watson,"towers, watson, willis, wtw",WTW
+Wynn Resorts,"resorts, wynn",WYNN
+Xylem Inc.,"xyl, xylem",XYL
+Yum! Brands,"brands, yum, yum!",YUM
+Zebra Technologies,"technologies, zbra, zebra",ZBRA
+Zimmer Biomet,"biomet, zbh, zimmer",ZBH
+Zoetis,"zoetis, zts",ZTS
