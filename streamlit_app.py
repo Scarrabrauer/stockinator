@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import yfinance as yf
@@ -10,16 +9,18 @@ st.title("Daytrader Pro – Technische Analyse + News")
 
 @st.cache_data
 def load_ticker_db():
-    return pd.read_csv("ticker_database.csv")
+    df = pd.read_csv("ticker_database_clean.csv")
+    df.dropna(subset=["YahooTicker"], inplace=True)
+    return df
 
 ticker_db = load_ticker_db()
 
 def find_ticker_matches(q):
     q = q.strip().lower()
     return ticker_db[
-        ticker_db["Name"].str.lower().str.contains(q) |
-        ticker_db["Synonyme"].str.lower().str.contains(q) |
-        ticker_db["YahooTicker"].str.lower().str.contains(q)
+        ticker_db["Name"].astype(str).str.lower().str.contains(q) |
+        ticker_db["Synonyme"].astype(str).str.lower().str.contains(q) |
+        ticker_db["YahooTicker"].astype(str).str.lower().str.contains(q)
     ][["Name", "YahooTicker"]]
 
 def last_valid(series):
