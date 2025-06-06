@@ -40,7 +40,7 @@ def fetch_yahoo_news(symbol):
 def calculate_indicators(df):
     close = df["Close"]
     indicators = {}
-    close_eur = close * 0.92
+#    close_eur = close * 0.92
     indicators["price_eur"] = last_valid(close_eur)
 
     delta = close_eur.diff()
