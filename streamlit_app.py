@@ -121,7 +121,12 @@ if selected_symbol:
             st.info(summary)
 
             col1, col2, col3 = st.columns(3)
-            col1.metric("Kurs (EUR)", f"{ind['price_eur']:.2f}" if ind["price_eur"] else "n/v")
+            price = ind.get("price_eur")
+            if isinstance(price, (int, float)):
+                col1.metric("Kurs (EUR)", f"{price:.2f}")
+            else:
+                col1.metric("Kurs (EUR)", "n/v")
+#            col1.metric("Kurs (EUR)", f"{ind['price_eur']:.2f}" if ind["price_eur"] else "n/v")
             col2.metric("1W Performance", f"{ind['perf_1w']:.2f}%")
             col3.metric("1M Performance", f"{ind['perf_1m']:.2f}%")
 
