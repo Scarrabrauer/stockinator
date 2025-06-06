@@ -41,7 +41,7 @@ def calculate_indicators(df):
     close = df["Close"]
     indicators = {}
     close_eur = close * 0.92
-#    indicators["price_eur"] = last_valid(close_eur)
+    indicators["price_eur"] = last_valid(close_eur)
 
     delta = close_eur.diff()
     gain = delta.clip(lower=0)
@@ -116,28 +116,24 @@ if selected_symbol:
         else:
             ind = calculate_indicators(df)
 
-            st.markdown("#### Zusammenfassung")
-            summary = f"**Trend:** {ind['trend']} • **RSI:** {ind['rsi']:.0f} ({ind['rsi_state']}) • **MACD:** {ind['macd_trend']}"
-            st.info(summary)
+            def fmt(val, digits=2):
+                if isinstance(val, (float, int, np.floating)):
+                    return f"{val:.{digits}f}"
+                return "n/v"
 
             col1, col2, col3 = st.columns(3)
-#            price = ind.get("price_eur")
-#            if isinstance(price, (int, float)):
-#                col1.metric("Kurs (EUR)", f"{price:.2f}")
-#            else:
-#                col1.metric("Kurs (EUR)", "n/v")
-#            col1.metric("Kurs (EUR)", f"{ind['price_eur']:.2f}" if ind["price_eur"] else "n/v")
-            col2.metric("1W Performance", f"{ind['perf_1w']:.2f}%")
-            col3.metric("1M Performance", f"{ind['perf_1m']:.2f}%")
+            col1.metric("Kurs (EUR)", fmt(ind.get("price_eur")))
+            col2.metric("Trend", ind.get("trend", "n/v"))
+            col3.metric("RSI", f"{fmt(ind.get('rsi'), 0)} ({ind.get('rsi_state', '')})" if ind.get("rsi") else "n/v")
 
             col4, col5, col6 = st.columns(3)
-            col4.metric("Volatilität", f"{ind['volatility']:.2f}%")
-            col5.metric("MACD", f"{ind['macd']:.2f}" if ind["macd"] else "n/v")
-            col6.metric("MACD-Signal", f"{ind['macd_signal']:.2f}" if ind["macd_signal"] else "n/v")
+            col4.metric("MACD", fmt(ind.get("macd")))
+            col5.metric("MACD-Signal", fmt(ind.get("macd_signal")))
+            col6.metric("MACD-Trend", ind.get("macd_trend", "n/v"))
 
             col7, col8 = st.columns(2)
-            col7.metric("Bollinger oben", f"{ind['bollinger_upper']:.2f}" if ind["bollinger_upper"] else "n/v")
-            col8.metric("Bollinger unten", f"{ind['bollinger_lower']:.2f}" if ind["bollinger_lower"] else "n/v")
+            col7.metric("Bollinger oben", fmt(ind.get("bollinger_upper")))
+            col8.metric("Bollinger unten", fmt(ind.get("bollinger_lower")))
 
             st.markdown("### Aktuelle Schlagzeilen (Yahoo Finance)")
             news = fetch_yahoo_news(selected_symbol)
@@ -146,6 +142,5 @@ if selected_symbol:
                     st.markdown(f"- [{title}]({link})")
             else:
                 st.info("Keine aktuellen Schlagzeilen gefunden.")
-
     except Exception as e:
         st.error(f"Fehler bei der Analyse: {e}")
