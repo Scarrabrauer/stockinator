@@ -31,7 +31,7 @@ def last_valid(series):
 
 def fetch_yahoo_news(symbol):
     try:
-        url = f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={symbol}&region=US&lang=de-DE"
+        url = f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={symbol}&region=DE&lang=de-DE"
         feed = feedparser.parse(url)
         return [(e.title, e.link) for e in feed.entries[:3]]
     except:
