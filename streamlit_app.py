@@ -93,7 +93,7 @@ def calculate_indicators(df):
     return indicators
 
 st.markdown("### Aktie eingeben (Name, WKN, ISIN, Ticker oder Synonym)")
-query = st.text_input("Beispiel: Rhein, Airbus, DAI", "")
+query = st.text_input("Beispiel: Rhein, Airbus, DAI", "SAP")
 
 selected_symbol = None
 match_df = find_ticker_matches(query)
